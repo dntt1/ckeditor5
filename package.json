@@ -17,7 +17,7 @@
     "ckeditor5-engine": "github:ckeditor/ckeditor5-engine#t/395",
     "ckeditor5-delete": "ckeditor/ckeditor5-delete",
     "ckeditor5-enter": "ckeditor/ckeditor5-enter",
-    "ckeditor5-formats": "ckeditor/ckeditor5-formats",
+    "ckeditor5-headings": "ckeditor/ckeditor5-headings",
     "ckeditor5-paragraph": "ckeditor/ckeditor5-paragraph",
     "ckeditor5-theme-lark": "ckeditor/ckeditor5-theme-lark",
     "ckeditor5-typing": "ckeditor/ckeditor5-typing",
@@ -93,9 +93,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ckeditor/ckeditor5.git"
-  },
-  "scripts": {
-    "test": "mocha dev/tests --recursive",
-    "coverage": "istanbul cover _mocha dev/tests/ -- --recursive"
   }
 }

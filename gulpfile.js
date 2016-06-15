@@ -23,14 +23,14 @@ const config = {
 	]
 };
 
-require( './dev/tasks/build/tasks' )( config );
+require( './dev/tasks/build/tasks' )( config ).register();
 require( './dev/tasks/bundle/tasks' )( config );
 
 if ( isDev ) {
-	require( './dev/tasks/dev/tasks' )( config );
-	require( './dev/tasks/lint/tasks' )( config );
-	require( './dev/tasks/test/tasks' )( config );
-	require( './dev/tasks/docs/tasks' )( config );
+	require( './dev/tasks/dev/tasks' )( config ).register();
+	require( './dev/tasks/lint/tasks' )( config ).register();
+	require( './dev/tasks/test/tasks' )( config ).register();
+	require( './dev/tasks/docs/tasks' )( config ).register();
 
 	gulp.task( 'pre-commit', [ 'lint-staged' ] );
 }
